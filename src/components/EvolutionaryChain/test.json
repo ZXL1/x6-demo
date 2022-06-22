@@ -1,0 +1,55 @@
+[
+    {
+        "edge":{},
+        "node":{"name":"预案开始"},
+        "branch":[]
+    },
+    {
+        "edge":{},
+        "node":{"label":"询问"},
+        "branch":[
+            {
+                "edge":{"label":"1"},
+                "node":{"label":"处置结果"},
+                "branch":[
+                    {
+                        "edge":{},
+                        "node":{"label":"已完成"},
+                        "branch":[] 
+                    }
+                ] 
+            },
+            {
+                "edge":{"label":"2"},
+                "node":{},
+                "branch":[] 
+            },
+            {
+                "edge":{"label":"3"},
+                "node":{"label":"处置命令"},
+                "branch":[
+                    {
+                        "edge":{},
+                        "node":{"label":"处置过程"},
+                        "branch":[
+                            {
+                                "edge":{},
+                                "node":{"label":"处置结果"},
+                                "branch":[] 
+                            }
+                        ] 
+                    }
+                    
+                ] 
+            }
+
+        ]
+    },
+    {
+        "edge":{},
+        "node":{"name":"预案结束"},
+        "branch":[]
+    }
+]
+
+
